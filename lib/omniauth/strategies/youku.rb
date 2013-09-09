@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 require 'omniauth-oauth2'
-require 'awesome_print'
 
 module OmniAuth
   module Strategies
