@@ -6,8 +6,8 @@ require 'omniauth-youku-oauth2/version'
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-youku-oauth2"
   spec.version       = Omniauth::YoukuOauth2::VERSION
-  spec.authors       = ["Howl王"]
-  spec.email         = ["mimosa@shareday.com"]
+  spec.authors       = [""]
+  spec.email         = [""]
   spec.description   = %q{OmniAuth Oauth2 strategy for youku.com.}
   spec.summary       = %q{OmniAuth Oauth2 strategy for youku.com.}
   spec.homepage      = ""
