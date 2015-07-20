@@ -51,7 +51,7 @@ module OmniAuth
               params[v.to_sym] = request.params[v]
 
               # to support omniauth-oauth2's auto csrf protection
-              session['omniauth.state'] = params[:state] if v == 'state'
+              # session['omniauth.state'] = params[:state] if v == 'state'
             end
           end
         end
