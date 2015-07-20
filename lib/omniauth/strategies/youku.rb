@@ -45,16 +45,17 @@ module OmniAuth
       # in the OmniAuth config :authorize_params option.
       #
       def authorize_params
-        super.tap do |params|
-          %w[ state ].each do |v|
-            if request.params[v]
-              params[v.to_sym] = request.params[v]
+        # super.tap do |params|
+        #   %w[ state ].each do |v|
+        #     if request.params[v]
+        #       params[v.to_sym] = request.params[v]
 
-              # to support omniauth-oauth2's auto csrf protection
-              # session['omniauth.state'] = params[:state] if v == 'state'
-            end
-          end
-        end
+        #       # to support omniauth-oauth2's auto csrf protection
+        #       session['omniauth.state'] = params[:state] if v == 'state'
+        #     end
+        #   end
+        # end
+        super
       end
 
       private
